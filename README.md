@@ -6,6 +6,8 @@ In this project you implement a known model for a soft solid, the so-called elas
 
 <img src="https://www.complexfluids.ethz.ch/images/PROJECT-soft-solid.PNG" width="50%">
 
+The following tasks are meant to become python-functions, with some input like the set of *g,k,T,N* and some output like *X,Y,L".
+
 ## Task 1: create_initial_configuration(*g,k,T,N*)
 
 1. Place *N* $\times$ *N* nodes on a regular two-dimensional grid with lattice spacing *g* in a square box of size *L* $\times$ *L* where *L = gN*. The box is centered at the origin, i.e., the coordinates are all in [-*L*/2,*L*/2]. 
