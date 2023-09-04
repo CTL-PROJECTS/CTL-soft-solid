@@ -6,7 +6,7 @@ In this project you implement a known model for a soft solid, the so-called elas
 
 <img src="https://www.complexfluids.ethz.ch/images/PROJECT-soft-solid.PNG" width="50%">
 
-The following tasks are meant to become python-functions, with some input like the set of *g,k,T,N* and some output like *X,Y,L".
+The following tasks are meant to become python-functions, with some input like the set of *g,k,T,N* and some output like *X,Y,L". The reason for creating such functions becomes most evident lateron in the molecular_dynamics function, where you may start to read. 
 
 ## Task 1: create_initial_configuration(*g,k,T,N*)
 
@@ -22,7 +22,7 @@ This function creates and returns two *N* $\times$ *N* random velocity arrays (V
 
 This function 
 1. multiplies both VX and VY with a unique factor so that the kinetic energy is *N* $\times$ *T*. The kinetic energy is the sum of all squared velocity components.
-2. Checks that the kinetic energy is now indeed *N* $\times$ *T*
+2. Calculate and print the new kinetic energy and check that it now indeed equals *N* $\times$ *T*. This command can be removed once the test has been successfully passed. 
 3. Calculates the mean of all velocity vectors meanVX, meanVY and afterwards sets VX -= meanVX and VY -= meanVY to make sure the mean velocity is zero.
 2. returns the modified VX and VY.
 
