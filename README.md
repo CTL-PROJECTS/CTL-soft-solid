@@ -2,9 +2,18 @@ General information about the CTL course available at https://ctl.polyphys.mat.e
 
 # :wave: PROJECT SoftSolid
 
-In this project you implement a known model for a soft solid, the so-called elastic Lennard-Jones model, and explore its features. The model is solved using molecular dynamics (thermostatted Newtons equation of motion). All particles (nodes) are residing in a periodic two-dimensional square simulation box of side length L. Particles experience a long-range attraction caused by elastic springs to the original neighbors, and repulse each other. This competition gives rise to a phase transition, if parameters are suitably chosen. The four model parameters *g* (grid constant), *k* (spring coefficient), *T* (temperature), and *L=gN* (linear system size, integer-valued *N*) are described below. We are using reduced units throughout, i.e., all quantities are dimensionless. Typical parameters are: *N*=100 or smaller, *k*=0.1, *g*=3.5, *dt*=0.005, and temperatues *T* in the range from 0.1 to 1.5.
+In this project you implement a known 2D model for a soft solid, the so-called elastic Lennard-Jones model [1], and explore its features. The model is solved using molecular dynamics (thermostatted Newton's equation of motion). All particles (nodes) are residing in a periodic two-dimensional square simulation box of side length *L*. Particles experience a long-range attraction caused by elastic springs to the original neighbors, and repulse each other. This competition gives rise to a phase transition, if parameters are suitably chosen. The four model parameters *g* (grid constant), *k* (spring coefficient), *T* (temperature), and *L=gN* (linear system size, the paraeter is not *L* but the integer-valued *N*) are described below. We are using reduced units throughout, i.e., all quantities are dimensionless. 
+
+Typical parameters are: *N*=100 or smaller, *k=0.1*, *g=3.5*, a molecular dynamics time step $\Delta$ *t*=0.005, and temperatues *T* in the range from 0.1 to 1.5.
 
 <img src="https://www.complexfluids.ethz.ch/images/PROJECT-soft-solid.PNG" width="50%">
+
+https://www.complexfluids.ethz.ch/images/soft-solid/Media1.gif
+
+[![](https://www.complexfluids.ethz.ch/images/soft-solid/Media1.gif)](https://www.complexfluids.ethz.ch/images/soft-solid/Media1.gif)
+
+
+<img src="https://www.complexfluids.ethz.ch/images/soft-solid/Media1.gif" width="50%">
 
 The following tasks are meant to become python-functions, with some input like the set of *g,k,T,N* and some output like *X,Y,L". The reason for creating such functions becomes most evident lateron in the molecular_dynamics function, where you may start to read. 
 
@@ -80,4 +89,5 @@ For each of the nodes check if it has at least one other node in its neighborhoo
 
 using g=3.5, k=0.1, dt=0.005, and some N>10. 
 
+[1] http://doi.org/10.1209/0295-5075/77/58007
 
