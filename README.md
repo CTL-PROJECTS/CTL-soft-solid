@@ -8,9 +8,9 @@ Typical parameters are: *N*=100 or smaller, *k=0.1*, *g=3.5*, a molecular dynami
 
 <img src="https://www.complexfluids.ethz.ch/images/PROJECT-soft-solid.PNG" width="50%">
 
-https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/Media1.mp4
+Movie 1: https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/Media1.mp4
 
-[![](https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/Media1.gif)](https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/Media1.gif)
+Movie 2: https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/Media2.mp4
 
 
 <img src="https://www.complexfluids.ethz.ch/images/soft-solid/Media1.gif" width="50%">
