@@ -140,7 +140,7 @@ return the final t,coordinates, velocities, and forces.
 ## Optional tasks
 
 1. Calculate the time your code needs to do a single molecular dynamics step, and divide it by the number of nodes, *N*<sup>2</sup>. Report this value. 
-2. Create a routine that calculates all forces **F** with a computational effort that is proportional to the number of nodes, and not quadratic in the number of nodes (hint: neighbor lists)
+2. Create a routine that calculates all forces **F** with a computational effort that is proportional to the number of nodes, and not quadratic in the number of nodes (hint: neighbor lists). This way, your code could run at a larger *N*.
 3. Create a movie
 4. Calculate the size of the largest cluster of HDP particles, which defines another order parameter, and run the above application 5. for this new order parameter.  
 
