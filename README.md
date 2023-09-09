@@ -129,7 +129,7 @@ Now we are ready to implement a full molecular dynamics with MDsteps steps, each
     
 return the final t,coordinates, velocities, and forces. 
 
-## Applications
+## Tasks
 
 1. reproduce one or more of the above configurations qualitatively (you have different initial velocities)
 2. plot &Phi; versus time to check if &Phi; reaches a stationary value
@@ -137,7 +137,7 @@ return the final t,coordinates, velocities, and forces.
 4. check if and how the result depends on initial velocities
 5. plot steady-state values of &Phi; versus temperature *T* using *N=30*, *g=3.5*, *k=0.05* over the range of temperatures *T* in [0.1,0.6].
 
-## Advanced
+## Optional tasks
 
 1. Calculate the time your code needs to do a single molecular dynamics step, and divide it by the number of nodes, *N*<sup>2</sup>. Report this value. 
 2. Create a routine that calculates all forces **F** with a computational effort that is proportional to the number of nodes, and not quadratic in the number of nodes (hint: neighbor lists)
