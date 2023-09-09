@@ -52,7 +52,7 @@ The following table provides some snapshots at different times, for later compar
 | 30 | 3.5 | 0.05 | 0.2 | <img src="https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/fig-MD-N=30-g=3.5-k=0.05-T = 0.2-dt=0.01-Phi=0-t=0.png" width="100%"> | <img src="https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/fig-MD-N=30-g=3.5-k=0.05-T = 0.2-dt=0.01-Phi=0.43-t=20.png" width="100%"> | <img src="https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/fig-MD-N=30-g=3.5-k=0.05-T = 0.2-dt=0.01-Phi=0.71-t=99.99.png" width="100%"> | <img src="https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/fig-MD-N=30-g=3.5-k=0.05-T = 0.2-dt=0.01-Phi=0.87-t=999.99.png" width="100%"> |
 | 30 | 3.5 | 0.05 | 0.5 | <img src="https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/fig-MD-N=30-g=3.5-k=0.05-T = 0.5-dt=0.01-Phi=0-t=0.png" width="100%"> | <img src="https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/fig-MD-N=30-g=3.5-k=0.05-T = 0.5-dt=0.01-Phi=0.48-t=20.png" width="100%"> | <img src="https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/fig-MD-N=30-g=3.5-k=0.05-T = 0.5-dt=0.01-Phi=0.6-t=99.99.png" width="100%"> | <img src="https://ctl.polyphys.mat.ethz.ch/CTL-I-PUBLIC/soft-solid/fig-MD-N=30-g=3.5-k=0.05-T = 0.5-dt=0.01-Phi=0.87-t=999.99.png" width="100%"> |
 
-     Missing Phi=soft_solid(30,3.5,0.05,0.5,10000)
+# Code
 
 The following tasks are meant to become python-functions, with some input like the set of *g,k,T,N* and some output like *X,Y,L". The reason for creating such functions becomes most evident lateron in the molecular_dynamics function, where you may start to read. 
 
@@ -129,7 +129,7 @@ Now we are ready to implement a full molecular dynamics with MDsteps steps, each
     
 return the final t,coordinates, velocities, and forces. 
 
-## Tasks
+# Tasks
 
 1. reproduce one or more of the above configurations qualitatively (you have different initial velocities)
 2. plot &Phi; versus time to check if &Phi; reaches a stationary value
@@ -142,7 +142,9 @@ return the final t,coordinates, velocities, and forces.
 1. Calculate the time your code needs to do a single molecular dynamics step, and divide it by the number of nodes, *N*<sup>2</sup>. Report this value. 
 2. Create a routine that calculates all forces **F** with a computational effort that is proportional to the number of nodes, and not quadratic in the number of nodes (hint: neighbor lists). This way, your code could run at a larger *N*.
 3. Create a movie
-4. Calculate the size of the largest cluster of HDP particles, which defines another order parameter, and run the above application 5. for this new order parameter.  
+4. Calculate the size of the largest cluster of HDP particles, which defines another order parameter, and run the above application 5. for this new order parameter.
+
+### References
 
 [1] http://doi.org/10.1209/0295-5075/77/58007
 
