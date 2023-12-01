@@ -69,7 +69,7 @@ This function creates and returns two *N* $\times$ *N* random velocity arrays (V
 ## def thermostat(*N,T*,VX,VY)
 
 This function 
-1. multiplies both VX and VY with a unique factor so that the kinetic energy is *N* $\times$ *T*. The kinetic energy is the sum of all squared velocity components.
+1. multiplies both VX and VY with a unique factor so that the kinetic energy is *N* $\times$ *T*. The kinetic energy is half of the sum of all squared velocity components.
 2. Calculate and print the new kinetic energy and check that it now indeed equals *N* $\times$ *T*. This command can be removed once the test has been successfully passed. 
 3. Calculates the mean of all velocity vectors meanVX, meanVY and afterwards sets VX -= meanVX and VY -= meanVY to make sure the mean velocity is zero.
 2. returns the modified VX and VY.
